@@ -69,6 +69,6 @@ class DessertsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dessert_params
-      params.require(:dessert).permit(:category, :name)
+      params.require(:dessert).permit(:category, :name, :calories)
     end
 end
